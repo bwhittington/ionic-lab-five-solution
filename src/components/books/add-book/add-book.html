@@ -1,0 +1,23 @@
+
+<h2>Add Book</h2>
+<p>Please add the following information to add a new book to the list.</p>
+<form [formGroup]="addBookForm" (submit)="saveUser()">
+<ion-list>
+    <ion-item>
+        <ion-label floating>Book Name</ion-label>
+        <ion-input class="form-control" formControlName="title" required></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>Book Description</ion-label>
+        <ion-input class="form-control" formControlName="description" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Cover Image</ion-label>
+      <ion-input class="form-control" formControlName="backgroundImage" required></ion-input>
+    </ion-item>
+    <ion-item>
+        <button ion-button type="submit" [disabled]="!addBookForm.valid">Submit</button>
+    </ion-item>
+</ion-list>
+</form>
+

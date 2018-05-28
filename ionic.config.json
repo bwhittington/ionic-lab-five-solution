@@ -1,0 +1,8 @@
+{
+  "name": "01-lab-solution",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

@@ -1,0 +1,8 @@
+.lab-two {
+  background-color:color($colors, dark);
+  &__hero {
+    height:30vmin;
+    background: url('/assets/imgs/code.jpg') center no-repeat;
+    background-size:cover;
+  }
+}

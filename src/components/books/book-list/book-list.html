@@ -1,0 +1,16 @@
+<div class="books">
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor='let book of bookList'>
+          <ion-card (click)='viewDetails($event, book.id)'>
+            <ion-card-header>
+                <h2 class="card-title">{{ book.title }}</h2>
+            </ion-card-header>
+              <div class="card__image" [style.background-image]="'url(' + book.backgroundImage + ')'"></div>
+
+              <p class="card-subtitle">{{ book.description }}</p>
+            </ion-card>
+      </ion-col>
+      </ion-row>
+  </ion-grid>
+</div>

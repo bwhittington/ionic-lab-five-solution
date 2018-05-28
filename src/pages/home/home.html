@@ -1,0 +1,42 @@
+<ion-header primary>
+  <ion-navbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      Labs
+    </ion-card-header>
+
+    <ion-list>
+      <button ion-item (click)='navigateTo("lab-one")'>
+        <ion-icon name="pint" item-start></ion-icon>
+        Lab One
+      </button>
+
+      <button ion-item primary (click)='navigateTo("lab-two")'>
+        <ion-icon name="outlet" item-start></ion-icon>
+        Lab Two
+      </button>
+
+      <button ion-item (click)='navigateTo("lab-three")'>
+        <ion-icon name="nutrition" item-start></ion-icon>
+        Lab Three
+      </button>
+
+      <button ion-item (click)='navigateTo("lab-four")'>
+        <ion-icon name="nuclear" item-start></ion-icon>
+        Lab Four
+      </button>
+
+      <button ion-item (click)='navigateTo("lab-five")'>
+        <ion-icon name="beer" item-start></ion-icon>
+        Lab Five
+      </button>
+    </ion-list>
+  </ion-card>
+</ion-content>

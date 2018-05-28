@@ -1,0 +1,7 @@
+<ion-card>
+  <ion-card-header>
+      <h2 class="card-title">{{ book.title }}</h2>
+  </ion-card-header>
+    <div class="card__image" [style.background-image]="'url(' + book.backgroundImage + ')'"></div>
+    <p class="card-subtitle">{{ book.description }}</p>
+  </ion-card>

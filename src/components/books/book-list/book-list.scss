@@ -1,0 +1,10 @@
+.books {
+
+  .card {
+    &__image {
+      height: 30vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
